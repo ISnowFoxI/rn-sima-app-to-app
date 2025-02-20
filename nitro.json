@@ -1,0 +1,17 @@
+{
+  "cxxNamespace": ["rnsimaapptoapp"],
+  "ios": {
+    "iosModuleName": "RnSimaAppToApp"
+  },
+  "android": {
+    "androidNamespace": ["rnsimaapptoapp"],
+    "androidCxxLibName": "rnsimaapptoapp"
+  },
+  "autolinking": {
+    "RnSimaAppToApp": {
+      "swift": "RnSimaAppToApp",
+      "kotlin": "RnSimaAppToApp"
+    }
+  },
+  "ignorePaths": ["node_modules"]
+}
