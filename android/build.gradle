@@ -28,9 +28,11 @@ apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
 apply from: '../nitrogen/generated/android/rnsimaapptoapp+autolinking.gradle'
 
-if (isNewArchitectureEnabled()) {
-  apply plugin: "com.facebook.react"
-}
+
+// TODO: Investigate why below condition is needed, and if it is not needed, remove it.
+// if (isNewArchitectureEnabled()) {
+//   apply plugin: "com.facebook.react"
+// }
 
 def getExtOrIntegerDefault(name) {
   return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties["RnSimaAppToApp_" + name]).toInteger()
